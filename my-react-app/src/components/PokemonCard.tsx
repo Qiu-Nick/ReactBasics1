@@ -26,7 +26,7 @@ const PokemonCard = () => {
           alt={pokemon.name}
           />
         : <p>???</p>
-}
+        }
 
         <figcaption>
             {pokemon.name} 
