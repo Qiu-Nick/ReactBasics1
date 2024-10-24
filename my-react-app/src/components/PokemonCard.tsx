@@ -6,16 +6,16 @@ interface Pokemon {
 }
 
 interface PokemonCardProps {
-  pokemon : Pokemon
+  pokemon: Pokemon;
 }
 
 function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
     <figure>
       {pokemon.imgSrc ? (
-        <img src={pokemon.imgSrc} alt={pokemon.name} /> 
+        <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
-      <p>???</p>
+        <p>???</p>
       )}
       <figcaption>{pokemon.name}</figcaption>
     </figure>
